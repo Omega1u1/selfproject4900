@@ -1,0 +1,61 @@
+// Get ticket ID from URL parameters (e.g., ticketdetails.html?id=123)
+const urlParams = new URLSearchParams(window.location.search);
+const ticketId = urlParams.get('id');
+
+// Example ticket data (replace with your actual data fetching logic)
+let ticketData = {
+  id: ticketId,
+  
+submitter: "John Doe",
+  subject: "Laptop Issue",
+  priority: "High",
+  queryType: "Technical",
+  status: "Open",
+  description: "My laptop is not turning on.",
+  updates: [
+    { timestamp: "2023-12-18 10:00", message: "Ticket created" },
+    { timestamp: "2023-12-18 10:30", message: "Technician assigned" }
+  ],
+  comments: [
+    // { author: "Support Technician", text: "Initial assessment complete.", timestamp: "2023-12-19 11:00" },
+    // { author: "User", text: "Thanks for the update!", timestamp: "2023-12-19 11:15" }
+  ]
+};
+
+// Function to display ticket details
+function displayTicketDetails(ticketData) {
+  document.getElementById('ticket-id').textContent = ticketData.id;
+  document.getElementById('submitter').textContent = ticketData.submitter;
+  document.getElementById('subject').textContent = ticketData.subject;
+  document.getElementById('priority').textContent = ticketData.priority;
+  document.getElementById('query-type').textContent = ticketData.queryType;
+  document.getElementById('status').textContent = ticketData.status;
+  document.getElementById('description').textContent = ticketData.description;
+
+  // Populate updates
+  const updateList = document.getElementById('update-list');
+  updateList.innerHTML = ''; // Clear existing updates
+  ticketData.updates.forEach(update => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${update.timestamp}: ${update.message}`;
+    updateList.appendChild(listItem);
+  });
+}
+
+// Function to display comments
+function displayComments(comments) {
+  const commentList = document.getElementById('comment-list');
+  commentList.innerHTML = ''; // Clear existing comments
+
+  comments.forEach(comment => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <strong>${comment.author}:</strong> ${comment.text} 
+      <span class="comment-timestamp">${comment.timestamp}</span>
+    `;
+    commentList.appendChild(listItem);
+  });
+}
+
+
+// Call functions to display ticket details and comments

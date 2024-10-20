@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Analysis Dashboard</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <h1>Ticket Analysis Dashboard</h1>
+
+  <div id="date-range-selector">
+    <!-- Date/Time Range Selection Controls -->
+  </div>
+
+  <div id="ticket-volume">
+    <h2>Ticket Volume</h2>
+    <div id="overall-count"></div>
+    <div id="trend-chart"></div> 
+  </div>
+
+  <div id="ticket-distribution">
+    <h2>Ticket Distribution</h2>
+    <table id="technician-table"></table>
+    <div id="distribution-chart"></div>
+  </div>
+
+<! -- Add scripts when needed -- >
+<! -- ways to export data to csv -- >
+
+    
+</body>
+</html>

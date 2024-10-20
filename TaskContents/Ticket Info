@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Details</title>
+</head>
+<body>
+  <h1>Ticket Details</h1>
+
+  <div id="ticket-info">
+    <h2>Ticket ID: <span id="ticket-id"></span></h2>
+    <p><strong>Submitter:</strong> <span id="submitter"></span></p>
+    <p><strong>Subject:</strong> <span id="subject"></span></p>
+    <p><strong>Priority:</strong> <span id="priority"></span></p>
+    <p><strong>Query Type:</strong> <span id="query-type"></span></p>
+    <p><strong>Status:</strong> <span id="status"></span></p>
+    <p><strong>Description:</strong> <span id="description"></span></p>
+  </div>
+
+  <div id="ticket-updates">
+    <h2>Updates</h2>
+    <ul id="update-list">
+    </ul>
+  </div>
+
+  <div id="ticket-comments">
+    <h2>Comments</h2>
+    <ul id="comment-list">
+      <!-- Existing comments will be added here -->
+    </ul>
+
+    <h3>Add a Comment</h3>
+    <form id="comment-form">
+      <textarea id="comment-text" placeholder="Enter your comment"></textarea>
+      <button type="submit">Add Comment</button>
+    </form>
+  </div>
+
+  <script src="ticketdetails.js"></script>
+</body>
+</html>

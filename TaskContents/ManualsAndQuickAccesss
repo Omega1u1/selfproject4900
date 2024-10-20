@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Instructions</title>
+</head>
+<body>
+  <h1>Download Instructions</h1>
+
+  <ul>
+    <li> <! -- Add PDFs when needed -- >
+      <a href="" download>DownloadInstructions for Setting up your loaner</a>
+      <p>Detailed instructions in PDF format.</p>
+    </li>
+    <li>
+      <a href="" download>Download Instructions for Wiping your loaner laptop</a>
+      <p>Editable instructions in Word format.</p>
+    </li>
+  </ul>
+</body>
+</html>

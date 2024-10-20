@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Support Ticket Tracker</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <h1>Support Ticket Tracker</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Ticket ID</th>
+        <th>Submitter</th>
+        <th>Subject</th>
+        <th>Priority</th>
+        <th>Query Type</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1234</td>
+        <td>John Doe</td>
+        <td>Laptop Issue</td>
+        <td>High</td>
+        <td>Technical</td>
+        <td>Open</td>
+        <td><button>View</button> <button>Update</button></td>
+      </tr>
+      <tr>
+        <td>5678</td>
+        <td>Jane Smith</td>
+        <td>Password Reset</td>
+        <td>Medium</td>
+        <td>Account</td>
+        <td>In Progress</td>
+        <td><button>View</button> <button>Update</button></td>
+      </tr>
+      <tr>
+        <td>9101</td>
+        <td>Alice Johnson</td>
+        <td>Software Bug</td>
+        <td>Low</td>
+        <td>Technical</td>
+        <td>Closed</td>
+        <td><button>View</button></td> 
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

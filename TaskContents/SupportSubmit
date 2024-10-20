@@ -19,6 +19,13 @@
     <label for="subject">Subject:</label>
     <input type="text" id="subject" name="subject" required>
 
+    <label for="queryType">Type of Query:</label>
+    <select id="queryType" name="queryType">
+    <option value="Laptop Replacement">Laptop Replacement</option>
+    <option value="Loaner Request">Loaner Request</option>
+    <option value="Software Support">Software Support</option>
+    <option value="other">Other</option> 
+
     <label for="description">Description:</label>
     <textarea id="description" name="description" required></textarea>
 
